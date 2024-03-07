@@ -1,0 +1,4 @@
+#!/bin/bash
+bin/cli rm /dist/bitexpert_forcecustomerlogin.zip
+bin/cli bash -c 'cd /var/www/html/BitExpert/ForceCustomerLogin && zip -r /dist/bitexpert_forcecustomerlogin.zip . -x *.git* *.github* *.idea* bin/* env/* dist/* vendor/* .coveralls.yml .travis.yml auth.json.enc docker-compose.yml validate_m2_package.php'
+bin/cli /var/www/html/BitExpert/ForceCustomerLogin/validate_m2_package.php /dist/bitexpert_forcecustomerlogin.zip

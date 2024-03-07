@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magezon
+ *
+ * This source file is subject to the Magezon Software License, which is available at http://magezon.com/license/.
+ * Do not edit or add to this file if you wish to upgrade the to newer versions in the future.
+ * If you wish to customize this module for your needs.
+ * Please refer to http://www.magezon.com for more information.
+ *
+ * @category  Magezon
+ * @package   Magezon_CustomerApproval
+ * @copyright Copyright (C) 2021 Magezon (http://magezon.com)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Customer\Controller\Account\CreatePost">
+        <plugin name="customerapproval_account_create_post" type="Magezon\CustomerApproval\Plugin\CustomerCreatePost" sortOrder="1"/>
+    </type>
+    <type name="Magento\Customer\Controller\Account\LoginPost">
+        <plugin name="customerapproval_account_login_post" type="Magezon\CustomerApproval\Plugin\CustomerLoginPost" sortOrder="1"/>
+    </type>
+    <type name="Magento\Customer\Controller\Account\Confirm">
+        <plugin name="customerapproval_account_confirm_post" type="Magezon\CustomerApproval\Plugin\CustomerConfirmPost" sortOrder="1"/>
+    </type>
+    <type name="Magento\Customer\Controller\Adminhtml\Index\Save">
+        <plugin name="customerapproval_admin_edit" type="Magezon\CustomerApproval\Plugin\Customer\Controller\Adminhtml\Save" sortOrder="1"/>
+    </type>
+    <type name="Magento\Customer\Model\AccountManagement">
+        <plugin name="customerapproval_auto_approval" type="Magezon\CustomerApproval\Plugin\Customer\Model\AccountManagement" sortOrder="1"/>
+    </type>
+    <preference for="Magento\Customer\Ui\Component\DataProvider" type="Magezon\CustomerApproval\Ui\Component\CustomerDataProvider" />
+</config>

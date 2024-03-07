@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magezon
+ *
+ * This source file is subject to the Magezon Software License, which is available at http://magezon.com/license/.
+ * Do not edit or add to this file if you wish to upgrade the to newer versions in the future.
+ * If you wish to customize this module for your needs.
+ * Please refer to http://www.magezon.com for more information.
+ *
+ * @category  Magezon
+ * @package   Magezon_CustomerApproval
+ * @copyright Copyright (C) 2021 Magezon (http://magezon.com)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+	<template id="customerapproval_admin_email_settings_email_template" label="Admin Email template" file="admin_email_template.html" type="html" module="Magezon_CustomerApproval" area="frontend"/>
+	<template id="customerapproval_customer_email_settings_pending_email_template" label="pending" file="pending.html" type="html" module="Magezon_CustomerApproval" area="frontend"/>
+	<template id="customerapproval_customer_email_settings_approval_email_template" label="approved" file="approved.html" type="html" module="Magezon_CustomerApproval" area="frontend"/>
+	<template id="customerapproval_customer_email_settings_rejected_email_template" label="rejected" file="rejected.html" type="html" module="Magezon_CustomerApproval" area="frontend"/>
+</config>

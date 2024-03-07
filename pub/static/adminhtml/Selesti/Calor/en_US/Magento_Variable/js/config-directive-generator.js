@@ -1,0 +1,1 @@
+/var/www/html/calor/vendor/magento/module-variable/view/adminhtml/web/js/config-directive-generator.js

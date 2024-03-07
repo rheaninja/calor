@@ -1,0 +1,332 @@
+
+.customer-account-login, .customer-account-create, .customer-account-forgotpassword, .customer-account-createpassword{
+    .login-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        .block-title{
+            font-size: 18px;
+            font-weight: 500;
+            color: #222;
+            letter-spacing: -.5px;
+            border: none;
+            padding-bottom: 0;
+            margin-bottom: 22px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: baseline;
+            strong{
+                text-transform: capitalize;
+                font-size: 18px; 
+                font-weight: 500;
+                font-family: 'Roboto',sans-serif;
+            }
+            .logo{
+                margin-bottom: 0;
+                margin-left: 0;
+            }
+            .logo-name{
+                margin-bottom: 20px;
+                font-weight: 600;
+            }
+        }
+        .block-customer-login{
+            margin: 0 auto;
+        }
+    }
+    .copyright{
+        background-color: transparent;
+        color: #666;
+        text-align: center;
+    }
+    .column{
+        &.main{
+            padding-bottom: 0;
+        }
+    }
+    input[type=email],
+    input[type=tel],
+    input[type=text],
+    input[type=password],
+    select{
+        border: 1px solid @control-border;
+        height: 45px;
+        line-height: 45px;
+        background-color: @color-white;
+        padding: 0 25px;
+        border-radius: 3px;
+        font-size: 13px;
+        font-family: 'Roboto',sans-serif;
+        &:focus{
+            box-shadow: 0 0 3px 1px @hover-danger;
+        }
+    }
+    textarea {
+        border: 1px solid @control-border;
+        background: @color-white;
+        padding: 15px 25px;
+        border-radius: 3px;
+        font-size: 13px;
+        font-family: 'Roboto',sans-serif;
+        &:focus{
+            box-shadow: 0 0 3px 1px @hover-danger;
+        }
+    }
+    .field{
+        .label{
+            font-size: 14px;
+            font-weight: 400;
+            color: #222;
+            display: none;
+            float: none;
+            padding-right: 0;
+            width: 100%;
+            margin-bottom: 7px;
+            padding: 6px 15px 0 0;
+        }
+    }
+    .actions-toolbar {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        .primary {
+            width: 100%;
+            margin-top: 7px;
+            float: none;
+            button{
+                background: @brand-danger;
+                border-color: @brand-danger;
+                color: @color-white;
+                font-size: 14px;
+                font-weight: 400;
+                width: 100%;
+                margin-top: 7px;
+                border-radius: 3px;
+                height: 40px;
+            }
+        }
+        .secondary{
+            display: block;
+            text-align: right;
+            float: none;
+            a{
+                color: #666;
+                text-transform: capitalize;
+                font-size: 14px;
+                margin-top: -8px;
+                font-weight: 500;
+            }
+        }
+       
+    }
+}
+.customer-account-create{
+    .block-title{
+        font-size: 18px;
+        font-weight: 500;
+        color: #222;
+        letter-spacing: -.5px;
+        border: none;
+        padding-bottom: 0;
+        margin-bottom: 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: baseline;
+        strong{
+            text-transform: capitalize;
+            font-size: 18px; 
+            font-weight: 500;
+            font-family: 'Roboto',sans-serif;
+        }
+        .logo{
+            margin-bottom: 0;
+            margin-left: 0;
+        }
+        .logo-name{
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        p{
+            color: #9a9a9a;
+            font-weight: 300;
+            font-size: 14px;
+        }
+    }
+    .form-create-account{
+        margin-top: 60px !important;
+        .create{
+            &.info, &.account{
+                margin-bottom: 20px;
+                // display: flex;
+                // gap: 15px;
+                // .field {
+                //     width: 50%;
+                // }
+            }
+        }
+        .address{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.customer-account-forgotpassword{
+    .block-title{
+        font-size: 18px;
+        font-weight: 500;
+        color: #222;
+        letter-spacing: -.5px;
+        border: none;
+        padding-bottom: 0;
+        margin-bottom: 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: baseline;
+        strong{
+            text-transform: capitalize;
+            font-size: 18px; 
+            font-weight: 500;
+            font-family: 'Roboto',sans-serif;
+        }
+        .logo{
+            margin-bottom: 0;
+            margin-left: 0;
+        }
+        .logo-name{
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        p{
+            color: #9a9a9a;
+            font-weight: 300;
+            font-size: 14px;
+        }
+    }
+    .form-create-account{
+        margin-top: 60px !important;
+        .create{
+            &.info, &.account{
+                margin-bottom: 20px;
+            }
+        }
+        .address{
+            margin-bottom: 0;
+        }
+    }
+    .form{
+        &.forget{
+            margin-top: 100px;
+            .fieldset{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.customer-account-createpassword{
+    .block-title{
+        font-size: 18px;
+        font-weight: 500;
+        color: #222;
+        letter-spacing: -.5px;
+        border: none;
+        padding-bottom: 0;
+        margin-bottom: 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: baseline;
+        strong{
+            text-transform: capitalize;
+            font-size: 18px; 
+            font-weight: 500;
+            font-family: 'Roboto',sans-serif;
+        }
+        .logo{
+            margin-bottom: 0;
+            margin-left: 0;
+        }
+        .logo-name{
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        p{
+            color: #9a9a9a;
+            font-weight: 300;
+            font-size: 14px;
+        }
+    }
+    .form-create-account{
+        margin-top: 60px !important;
+        .create{
+            &.info, &.account{
+                margin-bottom: 20px;
+            }
+        }
+        .address{
+            margin-bottom: 0;
+        }
+    }
+    .form{
+        &.reset{
+            .fieldset{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+body.customer-account-login, body.customer-account-create, .customer-account-forgotpassword, .customer-account-createpassword {
+    background: #f5f5f5;
+}
+@media (min-width: 768px){
+    .login-container {
+        .fieldset>.field>.control {
+            width: 100% !important;
+        }
+        .block{
+            max-width: 40% !important;
+        }
+    }
+    .form.create.account, .form.forget, .block-customer-reset-password{
+        max-width: 40% !important;
+        min-width: auto !important;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .form.reset{
+        margin-top: 0 !important;
+        width: 100% !important;
+        min-width: auto !important;
+    }
+    .password-strength-meter {
+        background-color: #f8f8f8;
+    }
+}
+@media (max-width: 768px){
+    .customer-account-forgotpassword{
+        .form{
+            &.forget{
+                margin-top: 40px;
+            }
+        }
+    }
+    .customer-account-login{
+        .login-container{
+            margin-top: 40px;
+        }
+    }
+    .customer-account-create{
+        .form-create-account{
+            margin-top: 40px !important;
+        }
+    }
+
+    .block-customer-reset-password{
+        margin-top: 40px;
+    }
+}

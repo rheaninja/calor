@@ -1,0 +1,1 @@
+/var/www/html/calor/vendor/magento/module-advanced-search/view/adminhtml/web/js/testconnection.js

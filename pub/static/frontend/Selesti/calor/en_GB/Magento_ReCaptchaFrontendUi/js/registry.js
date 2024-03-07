@@ -1,0 +1,1 @@
+/var/www/html/calor/vendor/magento/module-re-captcha-frontend-ui/view/frontend/web/js/registry.js

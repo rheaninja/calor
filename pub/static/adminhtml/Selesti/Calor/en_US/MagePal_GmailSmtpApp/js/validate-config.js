@@ -1,0 +1,1 @@
+/var/www/html/calor/vendor/magepal/magento2-gmailsmtpapp/view/adminhtml/web/js/validate-config.js

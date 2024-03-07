@@ -1,0 +1,47 @@
+parameters:
+    level: 7
+    inferPrivatePropertyTypeFromConstructor: true
+    checkMissingIterableValueType: false
+    fileExtensions:
+        - php
+        - phtml
+    paths:
+        - Api
+        - Block
+        - Controller
+        - Helper
+        - Model
+        - Plugin
+        - Repository
+        - Setup
+        - Ui
+        - Validator
+        - view
+    ignoreErrors:
+        -
+            message: '~Parameter #1 \$modelId of method Magento\\Framework\\Model\\AbstractModel::load\(\) expects int, string given~'
+            path: Repository/WhitelistRepository.php
+        -
+            message: '~Method BitExpert\\ForceCustomerLogin\\Repository\\WhitelistRepository::getList\(\) should return~'
+            path: Repository/WhitelistRepository.php
+        -
+            message: '~Call to an undefined method Magento\\Framework\\App\\RequestInterface::isPost\(\)~'
+            path: Controller/LoginCheck.php
+        -
+            message: '~Parameter #3.*~'
+            path: Block/Adminhtml/Manage/Create.php
+        -
+            message: '~Parameter #1.*~'
+            path: Block/Adminhtml/Manage/Create/Form.php
+        -
+            message: '~Parameter #1.*~'
+            path: Model/WhitelistEntry.php
+        -
+            message: '~Method.*~'
+            path: Setup/UpgradeData.php
+        -
+            message: '~Property.*~'
+            path: Setup/UpgradeData.php
+        -
+            message: '~Parameter.*~'
+            path: Setup/UpgradeData.php

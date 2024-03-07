@@ -1,0 +1,16 @@
+<!--@subject {{trans "%store_name: Account registration is successful" store_name=$store.getFrontendName()}} @-->
+<!--@vars {
+"var store.getFrontendName()":"Customer Approval: Store Name",
+"var name":"CustomerApproval: Customer Name",
+"var email":"CustomerApproval: Customer Email"
+} @-->
+{{template config_path="design/email/header_template"}}
+
+<p class="greeting">{{trans "Hello %name," name=$name}}</p>
+<p>{{trans "Thank you for registering your account at our website. Your account need the <strong>Approval</strong> before login. We hope for your kind waiting." |raw}}</p>
+<p>{{trans "Please contact us if you have any questions." |raw}}</p>
+<p>{{trans "Best regards." |raw}}</p>
+
+{{template config_path="design/email/footer_template"}}
+
+

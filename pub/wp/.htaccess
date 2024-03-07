@@ -1,0 +1,148 @@
+#
+# Secure WordPress when integrated into Magento
+# https://fishpig.co.uk/magento/wordpress-integration/docs/#security
+#
+<IfModule mod_rewrite.c>
+#
+#
+#
+RewriteEngine On
+
+#
+# Allow access to certain file extensions
+#
+RewriteCond %{REQUEST_URI} !\.(js|css|jpg|png|gif|svg|woff|woff2)$
+
+#
+# Allow access to specific PHP files
+#
+RewriteCond %{REQUEST_URI} !/index.php
+RewriteCond %{REQUEST_URI} !/wp-(comments-post|login).php
+
+# Some plugins use admin-ajax.php
+# If none of your plugins use this file
+# Remove the line below to block access to it
+RewriteCond %{REQUEST_URI} !/wp-admin/admin-ajax.php
+
+#
+# Allow global access to specific IPs
+# This will allow Admin access
+# Enter IPs below that should be allowed Admin access
+#
+# RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1$
+# RewriteCond %{REMOTE_ADDR} !^82\.12\.10\.1$
+
+#
+# This line allows Admin access to all IPs
+# Remove this to limit it to the IPs entered above
+#
+RewriteCond %{REQUEST_URI} !/wp-admin/
+
+#
+# Rewrite to 404.php
+# You can create a 404.php file in your WordPress folder
+# If this file doesn't exist, the Magento 404 will display
+#
+RewriteRule .* 404.php [L]
+
+</IfModule>
+
+<Files xmlrpc.php>
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+<FilesMatch "^.*(error_log|wp-config\.php|php.ini|\.[hH][tT][aApP].*)$">
+    Order deny,allow
+    Deny from all
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteRule ^wp-admin/includes/ - [F,L]
+    RewriteRule !^wp-includes/ - [S=3]
+    RewriteRule ^wp-includes/[^/]+\.php$ - [F,L]
+    RewriteRule ^wp-includes/js/tinymce/langs/.+\.php - [F,L]
+    RewriteRule ^wp-includes/theme-compat/ - [F,L]
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.+)/$ /$1 [R=301,L]
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
+    RewriteRule .* - [F]
+</IfModule>
+
+<IfModule mod_php7.c>
+    php_value session.cookie_httponly true
+</IfModule>
+
+<IfModule mod_autoindex.c>
+    Options All -Indexes
+</IfModule>
+
+<ifModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 seconds"
+    ExpiresByType text/html "access plus 1 seconds"
+    ExpiresByType image/gif "access plus 2592000 seconds"
+    ExpiresByType image/jpeg "access plus 2592000 seconds"
+    ExpiresByType image/png "access plus 2592000 seconds"
+    ExpiresByType text/css "access plus 604800 seconds"
+    ExpiresByType text/javascript "access plus 216000 seconds"
+    ExpiresByType application/x-javascript "access plus 216000 seconds"
+</ifModule>
+
+<IfModule mod_deflate.c>
+    # Compress HTML, CSS, JavaScript, Text, XML and fonts
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+    AddOutputFilterByType DEFLATE application/x-font
+    AddOutputFilterByType DEFLATE application/x-font-opentype
+    AddOutputFilterByType DEFLATE application/x-font-otf
+    AddOutputFilterByType DEFLATE application/x-font-truetype
+    AddOutputFilterByType DEFLATE application/x-font-ttf
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE font/opentype
+    AddOutputFilterByType DEFLATE font/otf
+    AddOutputFilterByType DEFLATE font/ttf
+    AddOutputFilterByType DEFLATE image/svg+xml
+    AddOutputFilterByType DEFLATE image/x-icon
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/xml
+
+    # Remove browser bugs (only needed for ancient browsers)
+    BrowserMatch ^Mozilla/4 gzip-only-text/html
+    BrowserMatch ^Mozilla/4\.0[678] no-gzip
+    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+    Header append Vary User-Agent
+</IfModule>
+
+
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /wp/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /wp/index.php [L]
+</IfModule>
+# END WordPress

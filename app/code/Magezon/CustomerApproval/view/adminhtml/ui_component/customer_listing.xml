@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Magezon
+ *
+ * This source file is subject to the Magezon Software License, which is available at http://magezon.com/license/.
+ * Do not edit or add to this file if you wish to upgrade the to newer versions in the future.
+ * If you wish to customize this module for your needs.
+ * Please refer to http://www.magezon.com for more information.
+ *
+ * @category  Magezon
+ * @package   Magezon_CustomerApproval
+ * @copyright Copyright (C) 2021 Magezon (http://magezon.com)
+ */
+-->
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <listingToolbar name="listing_top">
+        <massaction name="listing_massaction" component="Magento_Ui/js/grid/tree-massactions">
+            <action name="approved">
+                <settings>
+                    <url path="customerapproval/index/status/type/1"/>
+                    <type>approval</type>
+                    <label translate="true">Approved</label>
+                </settings>
+            </action>
+            <action name="pending">
+                <settings>
+                    <url path="customerapproval/index/status/type/2"/>
+                    <type>pending</type>
+                    <label translate="true">Pending</label>
+                </settings>
+            </action>
+            <action name="rejected">
+                <settings>
+                    <url path="customerapproval/index/status/type/0"/>
+                    <type>reject</type>
+                    <label translate="true">Reject</label>
+                </settings>
+            </action>
+        </massaction>
+    </listingToolbar>
+    
+    <columns name="customer_columns" class="Magento\Customer\Ui\Component\Listing\Columns">
+        <column name="is_approved" class="Magezon\CustomerApproval\Ui\Component\Listing\Column\ApprovalStatus">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="visible" xsi:type="boolean">false</item>
+                    <item name="filter" xsi:type="string">select</item>
+                    <item name="component" xsi:type="string">Magento_Ui/js/grid/columns/select</item>
+                    <item name="bodyTmpl" xsi:type="string">Magezon_Core/grid/cells/html</item>
+                    <item name="label" xsi:type="string" translate="true">Status</item>
+                </item>
+            </argument>
+        </column>
+    </columns>
+</listing>

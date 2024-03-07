@@ -1,0 +1,1007 @@
+button {
+  background: #ffffff;
+  border: 1px solid #f4f4f4;
+  color: #202020;
+  font-family: 'Roboto';
+  padding: 14px 30px;
+  border-radius: 8px !important;
+}
+button:hover {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.abs-incl-excl-tax .price-including-tax,
+.abs-incl-excl-tax .price-excluding-tax,
+.paypal-review .table-paypal-review-items .col.price .price-including-tax,
+.paypal-review .table-paypal-review-items .col.price .price-excluding-tax,
+.paypal-review .table-paypal-review-items .col.subtotal .price-including-tax,
+.paypal-review .table-paypal-review-items .col.subtotal .price-excluding-tax,
+.cart.table-wrapper .col.price .price-including-tax,
+.cart.table-wrapper .col.price .price-excluding-tax,
+.cart.table-wrapper .col.subtotal .price-including-tax,
+.cart.table-wrapper .col.subtotal .price-excluding-tax,
+.cart.table-wrapper .col.msrp .price-including-tax,
+.cart.table-wrapper .col.msrp .price-excluding-tax,
+.order-details-items .col.price .price-including-tax,
+.order-details-items .col.price .price-excluding-tax,
+.order-details-items .col.subtotal .price-including-tax,
+.order-details-items .col.subtotal .price-excluding-tax {
+  color: #202020;
+}
+.abs-block-widget-title strong,
+.block-compare .block-title strong,
+.block-reorder .block-title strong,
+.widget .block-title strong,
+.block-wishlist .block-title strong {
+  font-size: 14px;
+  font-weight: 600;
+  vertical-align: middle;
+}
+.abs-block-items-counter,
+.block-compare .counter,
+.block-wishlist .counter {
+  color: #202020;
+}
+input[type="text"],
+input[type="password"],
+input[type="url"],
+input[type="tel"],
+input[type="search"],
+input[type="number"],
+input[type*="date"],
+input[type="email"] {
+  background: #ffffff;
+  border: 1px solid #c2c2c2;
+  border-radius: 24px;
+  min-height: 40px;
+}
+select {
+  border-radius: 24px;
+  min-height: 40px;
+}
+.action.primary,
+.action-primary {
+  background: #e02b27;
+  border: 1px solid #e02b27;
+}
+.action.primary:hover,
+.action-primary:hover {
+  background: #cc3333;
+  border: 1px solid #cc3333;
+}
+.fotorama__thumb-border {
+  border: 1px solid #e02b27;
+}
+.nav-sections {
+  background: #ffffff;
+  border-top: 1px solid #e8e8e8;
+}
+.block-search .block-content input {
+  background: #ffffff;
+  background-clip: padding-box;
+  border: 1px solid #e8e8e8;
+  height: 40px;
+  border-radius: 24px;
+  padding: 6px 38px 6px 20px;
+  font-size: 14px;
+}
+.block-search .block-content input:focus {
+  box-shadow: 0 0 3px 1px #dcdef2;
+}
+.block-search .block-content .actions .action.search {
+  top: 4px;
+  right: 16px;
+}
+.page-header .header .minicart-wrapper {
+  margin-top: 4px;
+}
+.page-header .header .minicart-wrapper .block-minicart {
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.203453);
+  border: 0;
+}
+.page-header .header .minicart-wrapper .block-minicart .checkout {
+  border-radius: 24px;
+}
+.page-header .header .minicart-wrapper .block-minicart .product-item-name a {
+  color: #202020;
+}
+.page-header .header .minicart-wrapper .minicart-items .delete:before,
+.page-header .header .minicart-wrapper .minicart-items .edit:before {
+  color: #202020;
+}
+.page-header .header .minicart-wrapper .minicart-items .item-qty {
+  text-align: center;
+  width: 60px;
+  border-radius: 24px;
+  border: 1px solid #f1f1f1;
+  background-color: #f8f8f8;
+}
+.page-header .header .minicart-wrapper .minicart-items-wrapper {
+  border: 1px solid #f8f8f8;
+}
+.page-header .header .minicart-wrapper .minicart-items .product-item:not(:first-child) {
+  border-top: 1px solid #f8f8f8;
+}
+.page-header .header .minicart-wrapper .action.showcart:before {
+  color: #7f7f92;
+}
+.page-header .header .minicart-wrapper .action.showcart:hover {
+  color: #e02b27;
+}
+.page-header .header .minicart-wrapper .action.showcart .counter.qty {
+  border-radius: 24px;
+  position: absolute;
+  top: -8px;
+  left: 12px;
+  background: #e02b27;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 0px;
+}
+.page-header .compare.wrapper .compare {
+  margin-bottom: 0 !important;
+  margin-top: 5px !important;
+}
+.customer-welcome ul {
+  border: 0 !important;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.203453) !important;
+  padding: 8px 0 !important;
+}
+.customer-welcome ul li a {
+  padding: 8px 15px;
+}
+@media (min-width: 768px) {
+  .page-header {
+    border: 0;
+    margin-bottom: 0;
+    background-color: #ffffff;
+  }
+  .page-header .panel.wrapper {
+    border-bottom: 1px solid #000000 !important;
+    background-color: #000000 !important;
+  }
+  .navigation {
+    background: #ffffff !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .minicart-wrapper {
+    margin-top: 10px !important;
+  }
+  .minicart-wrapper .action.showcart .counter.qty {
+    border-radius: 24px;
+    position: absolute;
+    top: -8px;
+    left: 12px;
+    background: #e02b27;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 0px;
+  }
+}
+.newsletter {
+  position: relative;
+}
+.newsletter .control:before {
+  top: 5px;
+  color: #202020;
+}
+.newsletter input {
+  background: #ffffff !important;
+  border-top-left-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  height: 45px;
+  border: 0 !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+.newsletter .action.subscribe {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  height: 45px;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+.copyright {
+  background-color: #ffffff;
+  color: #000;
+}
+.footer.content .links > li {
+  border: none;
+}
+.customer-account-login .login-container,
+.customer-account-create .login-container,
+.customer-account-forgotpassword .login-container,
+.customer-account-createpassword .login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.customer-account-login .login-container .block-title,
+.customer-account-create .login-container .block-title,
+.customer-account-forgotpassword .login-container .block-title,
+.customer-account-createpassword .login-container .block-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  letter-spacing: -.5px;
+  border: none;
+  padding-bottom: 0;
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.customer-account-login .login-container .block-title strong,
+.customer-account-create .login-container .block-title strong,
+.customer-account-forgotpassword .login-container .block-title strong,
+.customer-account-createpassword .login-container .block-title strong {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+.customer-account-login .login-container .block-title .logo,
+.customer-account-create .login-container .block-title .logo,
+.customer-account-forgotpassword .login-container .block-title .logo,
+.customer-account-createpassword .login-container .block-title .logo {
+  margin-bottom: 0;
+  margin-left: 0;
+}
+.customer-account-login .login-container .block-title .logo-name,
+.customer-account-create .login-container .block-title .logo-name,
+.customer-account-forgotpassword .login-container .block-title .logo-name,
+.customer-account-createpassword .login-container .block-title .logo-name {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.customer-account-login .login-container .block-customer-login,
+.customer-account-create .login-container .block-customer-login,
+.customer-account-forgotpassword .login-container .block-customer-login,
+.customer-account-createpassword .login-container .block-customer-login {
+  margin: 0 auto;
+}
+.customer-account-login .copyright,
+.customer-account-create .copyright,
+.customer-account-forgotpassword .copyright,
+.customer-account-createpassword .copyright {
+  background-color: transparent;
+  color: #666;
+  text-align: center;
+}
+.customer-account-login .column.main,
+.customer-account-create .column.main,
+.customer-account-forgotpassword .column.main,
+.customer-account-createpassword .column.main {
+  padding-bottom: 0;
+}
+.customer-account-login input[type=email],
+.customer-account-create input[type=email],
+.customer-account-forgotpassword input[type=email],
+.customer-account-createpassword input[type=email],
+.customer-account-login input[type=tel],
+.customer-account-create input[type=tel],
+.customer-account-forgotpassword input[type=tel],
+.customer-account-createpassword input[type=tel],
+.customer-account-login input[type=text],
+.customer-account-create input[type=text],
+.customer-account-forgotpassword input[type=text],
+.customer-account-createpassword input[type=text],
+.customer-account-login input[type=password],
+.customer-account-create input[type=password],
+.customer-account-forgotpassword input[type=password],
+.customer-account-createpassword input[type=password],
+.customer-account-login select,
+.customer-account-create select,
+.customer-account-forgotpassword select,
+.customer-account-createpassword select {
+  border: 1px solid #e1e1e1;
+  height: 45px;
+  line-height: 45px;
+  background-color: #ffffff;
+  padding: 0 25px;
+  border-radius: 3px;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+}
+.customer-account-login input[type=email]:focus,
+.customer-account-create input[type=email]:focus,
+.customer-account-forgotpassword input[type=email]:focus,
+.customer-account-createpassword input[type=email]:focus,
+.customer-account-login input[type=tel]:focus,
+.customer-account-create input[type=tel]:focus,
+.customer-account-forgotpassword input[type=tel]:focus,
+.customer-account-createpassword input[type=tel]:focus,
+.customer-account-login input[type=text]:focus,
+.customer-account-create input[type=text]:focus,
+.customer-account-forgotpassword input[type=text]:focus,
+.customer-account-createpassword input[type=text]:focus,
+.customer-account-login input[type=password]:focus,
+.customer-account-create input[type=password]:focus,
+.customer-account-forgotpassword input[type=password]:focus,
+.customer-account-createpassword input[type=password]:focus,
+.customer-account-login select:focus,
+.customer-account-create select:focus,
+.customer-account-forgotpassword select:focus,
+.customer-account-createpassword select:focus {
+  box-shadow: 0 0 3px 1px #cc3333;
+}
+.customer-account-login textarea,
+.customer-account-create textarea,
+.customer-account-forgotpassword textarea,
+.customer-account-createpassword textarea {
+  border: 1px solid #e1e1e1;
+  background: #ffffff;
+  padding: 15px 25px;
+  border-radius: 3px;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+}
+.customer-account-login textarea:focus,
+.customer-account-create textarea:focus,
+.customer-account-forgotpassword textarea:focus,
+.customer-account-createpassword textarea:focus {
+  box-shadow: 0 0 3px 1px #cc3333;
+}
+.customer-account-login .field .label,
+.customer-account-create .field .label,
+.customer-account-forgotpassword .field .label,
+.customer-account-createpassword .field .label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #222;
+  display: none;
+  float: none;
+  padding-right: 0;
+  width: 100%;
+  margin-bottom: 7px;
+  padding: 6px 15px 0 0;
+}
+.customer-account-login .actions-toolbar,
+.customer-account-create .actions-toolbar,
+.customer-account-forgotpassword .actions-toolbar,
+.customer-account-createpassword .actions-toolbar {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+}
+.customer-account-login .actions-toolbar .primary,
+.customer-account-create .actions-toolbar .primary,
+.customer-account-forgotpassword .actions-toolbar .primary,
+.customer-account-createpassword .actions-toolbar .primary {
+  width: 100%;
+  margin-top: 7px;
+  float: none;
+}
+.customer-account-login .actions-toolbar .primary button,
+.customer-account-create .actions-toolbar .primary button,
+.customer-account-forgotpassword .actions-toolbar .primary button,
+.customer-account-createpassword .actions-toolbar .primary button {
+  background: #e02b27;
+  border-color: #e02b27;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  width: 100%;
+  margin-top: 7px;
+  border-radius: 3px;
+  height: 40px;
+}
+.customer-account-login .actions-toolbar .secondary,
+.customer-account-create .actions-toolbar .secondary,
+.customer-account-forgotpassword .actions-toolbar .secondary,
+.customer-account-createpassword .actions-toolbar .secondary {
+  display: block;
+  text-align: right;
+  float: none;
+}
+.customer-account-login .actions-toolbar .secondary a,
+.customer-account-create .actions-toolbar .secondary a,
+.customer-account-forgotpassword .actions-toolbar .secondary a,
+.customer-account-createpassword .actions-toolbar .secondary a {
+  color: #666;
+  text-transform: capitalize;
+  font-size: 14px;
+  margin-top: -8px;
+  font-weight: 500;
+}
+.customer-account-create .block-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  letter-spacing: -.5px;
+  border: none;
+  padding-bottom: 0;
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.customer-account-create .block-title strong {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+.customer-account-create .block-title .logo {
+  margin-bottom: 0;
+  margin-left: 0;
+}
+.customer-account-create .block-title .logo-name {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.customer-account-create .block-title p {
+  color: #9a9a9a;
+  font-weight: 300;
+  font-size: 14px;
+}
+.customer-account-create .form-create-account {
+  margin-top: 60px !important;
+}
+.customer-account-create .form-create-account .create.info,
+.customer-account-create .form-create-account .create.account {
+  margin-bottom: 20px;
+}
+.customer-account-create .form-create-account .address {
+  margin-bottom: 0;
+}
+.customer-account-forgotpassword .block-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  letter-spacing: -.5px;
+  border: none;
+  padding-bottom: 0;
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.customer-account-forgotpassword .block-title strong {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+.customer-account-forgotpassword .block-title .logo {
+  margin-bottom: 0;
+  margin-left: 0;
+}
+.customer-account-forgotpassword .block-title .logo-name {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.customer-account-forgotpassword .block-title p {
+  color: #9a9a9a;
+  font-weight: 300;
+  font-size: 14px;
+}
+.customer-account-forgotpassword .form-create-account {
+  margin-top: 60px !important;
+}
+.customer-account-forgotpassword .form-create-account .create.info,
+.customer-account-forgotpassword .form-create-account .create.account {
+  margin-bottom: 20px;
+}
+.customer-account-forgotpassword .form-create-account .address {
+  margin-bottom: 0;
+}
+.customer-account-forgotpassword .form.forget {
+  margin-top: 100px;
+}
+.customer-account-forgotpassword .form.forget .fieldset {
+  margin-bottom: 0;
+}
+.customer-account-createpassword .block-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  letter-spacing: -.5px;
+  border: none;
+  padding-bottom: 0;
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.customer-account-createpassword .block-title strong {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+.customer-account-createpassword .block-title .logo {
+  margin-bottom: 0;
+  margin-left: 0;
+}
+.customer-account-createpassword .block-title .logo-name {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.customer-account-createpassword .block-title p {
+  color: #9a9a9a;
+  font-weight: 300;
+  font-size: 14px;
+}
+.customer-account-createpassword .form-create-account {
+  margin-top: 60px !important;
+}
+.customer-account-createpassword .form-create-account .create.info,
+.customer-account-createpassword .form-create-account .create.account {
+  margin-bottom: 20px;
+}
+.customer-account-createpassword .form-create-account .address {
+  margin-bottom: 0;
+}
+.customer-account-createpassword .form.reset .fieldset {
+  margin-bottom: 20px;
+}
+body.customer-account-login,
+body.customer-account-create,
+.customer-account-forgotpassword,
+.customer-account-createpassword {
+  background: #f5f5f5;
+}
+@media (min-width: 768px) {
+  .login-container .fieldset > .field > .control {
+    width: 100% !important;
+  }
+  .login-container .block {
+    max-width: 40% !important;
+  }
+  .form.create.account,
+  .form.forget,
+  .block-customer-reset-password {
+    max-width: 40% !important;
+    min-width: auto !important;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  .form.reset {
+    margin-top: 0 !important;
+    width: 100% !important;
+    min-width: auto !important;
+  }
+  .password-strength-meter {
+    background-color: #f8f8f8;
+  }
+}
+@media (max-width: 768px) {
+  .customer-account-forgotpassword .form.forget {
+    margin-top: 40px;
+  }
+  .customer-account-login .login-container {
+    margin-top: 40px;
+  }
+  .customer-account-create .form-create-account {
+    margin-top: 40px !important;
+  }
+  .block-customer-reset-password {
+    margin-top: 40px;
+  }
+}
+.cart-summary {
+  background: #ffffff;
+  border-radius: 8px;
+}
+.cart-summary .block > .title {
+  border-top: 1px solid #f8f8f8;
+}
+.abs-sidebar-totals,
+.cart-totals,
+.opc-block-summary .table-totals {
+  border-top: 1px solid #f8f8f8;
+  padding-top: 10px;
+}
+.abs-sidebar-totals .grand .mark,
+.cart-totals .grand .mark,
+.opc-block-summary .table-totals .grand .mark {
+  border-top: 1px solid #f8f8f8;
+}
+.abs-sidebar-totals .grand .amount,
+.cart-totals .grand .amount,
+.opc-block-summary .table-totals .grand .amount {
+  font-size: 1.8rem;
+  border-top: 1px solid #f8f8f8;
+}
+.checkout-methods-items .multicheckout {
+  color: #202020;
+}
+.cart-discount .block > .title strong,
+.form-discount .block > .title strong {
+  color: #202020;
+}
+.cart-discount .action,
+.form-discount .action {
+  background: #e02b27 !important;
+  border: 0 !important;
+  color: #ffffff !important;
+  border-radius: 24px !important;
+  height: 40px;
+  margin-left: 8px !important;
+}
+.cart.table-wrapper .actions-toolbar .action-edit:before,
+.cart.table-wrapper .actions-toolbar .action-delete:before {
+  color: #202020;
+}
+.opc-progress-bar {
+  margin-top: 40px !important;
+}
+.opc-progress-bar .opc-progress-bar-item:before {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+}
+.opc-progress-bar .opc-progress-bar-item span:before,
+.opc-progress-bar .opc-progress-bar-item span:after {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+}
+.opc-progress-bar .opc-progress-bar-item._active:before {
+  background: #e02b27;
+  border-color: #e02b27;
+}
+.opc-progress-bar .opc-progress-bar-item._active > span:before {
+  background: #e02b27;
+  border-color: #e02b27;
+}
+.opc-block-summary {
+  background: #ffffff;
+  border-radius: 8px;
+}
+.opc-block-summary .title {
+  color: #202020 !important;
+  font-weight: 400 !important;
+  font-size: 20px !important;
+}
+.opc-block-summary .items-in-cart > .title {
+  border-bottom: 1px solid #f8f8f8 !important;
+}
+.minicart-items .product-item:not(:first-child) {
+  border-top: 1px solid #f8f8f8;
+}
+.opc-block-shipping-information {
+  padding: 20px 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+.opc-block-shipping-information .shipping-information-title {
+  border-bottom: 1px solid #f8f8f8;
+  font-size: 20px;
+  font-weight: 400;
+}
+.opc-block-shipping-information .shipping-information-title .action-edit:before {
+  color: #202020;
+}
+.opc-wrapper .shipping-address-item.selected-item {
+  border-color: #e02b27;
+}
+.opc-wrapper .shipping-address-item.selected-item:after {
+  background: #e02b27;
+}
+.checkout-success .actions-toolbar .primary .action {
+  border-radius: 8px;
+}
+.checkout-index-index .checkout-shipping-method .table-checkout-shipping-method tbody td {
+  cursor: pointer;
+}
+.checkout-index-index .checkout-shipping-method .table-checkout-shipping-method tbody td.col-price {
+  display: none;
+}
+.checkout-index-index .checkout-shipping-method .table-checkout-shipping-method tbody td:nth-child(3).col-method {
+  display: none;
+}
+.checkout-index-index .checkout-shipping-method .delivery-information {
+  display: none;
+}
+body {
+  background-color: #f8f8f8 !important;
+  font-family: 'Roboto' !important;
+  color: #202020;
+}
+.page-title-wrapper .page-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+@media (min-width: 768px) {
+  .navigation .level0 .submenu {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    border: 0;
+  }
+  .navigation .level0 .submenu li a {
+    color: #202020;
+    font-weight: 500;
+    border-left: 0 !important;
+  }
+  .navigation .level0 .level-top {
+    color: #202020 !important;
+  }
+}
+.filter .block-subtitle {
+  border-bottom: 1px solid #f8f8f8;
+}
+.filter .filter-options-item {
+  border-bottom: 1px solid #f8f8f8;
+}
+.breadcrumbs .items {
+  color: #202020;
+}
+.breadcrumbs .items a {
+  color: #202020;
+}
+.box-tocart .tocart {
+  border-radius: 8px;
+}
+.box-tocart input {
+  border-radius: 24px;
+}
+.product-options-bottom .price-box,
+.product-info-price .price-box {
+  color: #202020;
+}
+textarea {
+  border-radius: 24px;
+}
+.review-form .submit {
+  background: #e02b27 !important;
+  border: 1px solid #e02b27 !important;
+  color: #ffffff !important;
+  font-size: 1.4rem !important;
+  line-height: 1.6rem;
+  padding: 7px 46px !important;
+  margin: 0;
+  height: 40px;
+  border-radius: 8px;
+}
+.review-form .submit:hover {
+  background: #cc3333;
+  border: 1px solid #cc3333;
+  color: #ffffff;
+}
+.block-collapsible-nav .content {
+  background: #ffffff;
+  padding: 15px 0;
+}
+.modes .modes-mode {
+  border-radius: 8px !important;
+  border: 0;
+  box-shadow: none !important;
+  background: #ffffff;
+  border-right: 0 !important;
+  margin-right: 5px;
+}
+.modes .modes-mode:before {
+  color: #202020;
+  font-size: 14px;
+}
+.modes .modes-mode.active,
+.modes .modes-mode:hover {
+  background: #f1f1f1;
+  color: #202020;
+}
+.page-products .sorter select {
+  background-color: #ffffff;
+  box-shadow: none;
+  border-radius: 8px;
+  border: 0;
+}
+.page-layout-2columns-left .sidebar {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px !important;
+  margin-bottom: 20px;
+}
+.products-grid .product-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.products-grid .product-item {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 15px !important;
+  margin-bottom: 20px;
+}
+.products-grid .product-item-info:hover,
+.products-grid .product-item-info.active {
+  box-shadow: none;
+  border: 1px solid #ffffff;
+}
+.products-grid .product-item-details .product-item-inner {
+  background: #ffffff;
+  box-shadow: none;
+  border: 0;
+  border-top: none;
+  left: 0;
+  margin: 10px 0 0 0px;
+  padding: 0;
+  position: relative;
+  right: 0;
+  z-index: 2;
+}
+.products-grid .product-item-details .product-item-inner .product-item-actions {
+  margin: 0;
+}
+.products-grid .product-item-details .product-item-inner .product-item-actions .tocart {
+  border-radius: 8px;
+}
+.products-grid .product-item-details .product-item-inner .product-item-actions .actions-secondary .action {
+  color: #202020;
+}
+.products-grid .product-item-info:not(:hover):not(.active) .product-item-inner {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: auto;
+}
+.toolbar select {
+  background-color: #ffffff;
+  box-shadow: none;
+  border-radius: 3px;
+  border: 0;
+  border-radius: 8px;
+}
+.wishlist-index-index .product-item-inner {
+  box-shadow: none !important;
+  position: relative !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-top: 10px !important;
+  border: 0 !important;
+}
+.wishlist-index-index .product-item-inner .product-item-actions .action.edit {
+  background-color: #f4f4f4;
+  padding: 7px;
+  border-radius: 8px;
+}
+.wishlist-index-index .product-item-inner .product-item-actions .action.edit:before {
+  color: #202020;
+  font-size: 16px;
+}
+.wishlist-index-index .product-item-inner .product-item-actions .action.delete {
+  background-color: #f4f4f4;
+  padding: 7px;
+  border-radius: 8px;
+}
+.wishlist-index-index .product-item-inner .product-item-actions .action.delete:before {
+  color: #202020;
+  font-size: 16px;
+}
+.wishlist-index-index .product-item-inner .comment-box {
+  margin-top: 0 !important;
+}
+.wishlist-index-index .product-item-inner .product-item-comment {
+  margin-top: 0 !important;
+}
+.wrapper.products-list .product-item {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+}
+.wrapper.products-list .product-item .tocart {
+  border-radius: 8px;
+}
+.wrapper.products-list .product-item .product-item-info .product-item-details .product-item-inner .product-item-description ul {
+  font-size: 14px;
+}
+.wrapper.products-list .product-item .product-item-info .product-item-details .product-item-inner .product-item-description .more {
+  font-size: 14px;
+  color: #202020;
+  font-weight: 500;
+}
+.wrapper.products-list .product-item .product-item-info .product-item-details .product-item-inner .product-item-description .more:hover {
+  color: #e02b27;
+}
+.pages .items .item {
+  padding: 4px 13px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+.pages .items .item strong {
+  background: transparent;
+}
+.pages .items .item .next,
+.pages .items .item .previous {
+  margin-left: 0;
+  box-shadow: none;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+}
+.pages .items .item a {
+  color: #202020;
+}
+.pages .items .item.current {
+  background-color: #f1f1f1;
+}
+.sorter-action:before {
+  color: #202020;
+}
+.block-compare .action.primary {
+  background: #e02b27;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 6px 15px;
+  font-size: 1.4rem;
+  border-radius: 8px;
+}
+.block-compare .action.primary:hover {
+  background: #cc3333;
+  color: #ffffff;
+  border: none;
+}
+.product-info-main .overview ul {
+  font-size: 14px;
+}
+.product-info-main .product-info-price .map-fallback-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #767676;
+  font-weight: 500;
+}
+.delivery-information .delivery-date .ui-datepicker-trigger {
+  background-color: transparent;
+  border: 0;
+}
+.checkout-billing-address .actions-toolbar .primary {
+  float: left !important;
+}
+.checkout-billing-address .actions-toolbar .primary .action-update {
+  float: left !important;
+}
+.checkout-billing-address .actions-toolbar .primary .action-cancel {
+  margin-top: 12px !important;
+  margin-left: 15px !important;
+}
+.map-fallback-price {
+  display: block;
+  color: #7b7f94;
+  margin-top: 10px;
+}
+.ui-datepicker {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.203453);
+  border-radius: 8px;
+  background: #fff;
+}
+.ui-datepicker .ui-datepicker-calendar th {
+  background: #efefef;
+  border: #efefef 1px solid;
+  padding: 10px;
+}
+.ui-datepicker .ui-datepicker-calendar td {
+  border: #ffffff 1px solid;
+}
+.ui-datepicker .ui-datepicker-calendar td span,
+.ui-datepicker .ui-datepicker-calendar td a {
+  padding: 10px;
+}
+.ui-datepicker .ui-datepicker-calendar .ui-datepicker-today {
+  background: #efefef;
+}
+.ui-datepicker .ui-datepicker-calendar .ui-state-disabled {
+  background: #ffffff;
+}
+.ui-datepicker .ui-datepicker-prev span {
+  border-color: transparent #202020 transparent transparent;
+}
+.ui-datepicker .ui-datepicker-next span {
+  border-color: transparent transparent transparent #202020;
+}

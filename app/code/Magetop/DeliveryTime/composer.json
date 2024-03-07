@@ -1,0 +1,23 @@
+{
+  "name": "magetop/module-delivery-time",
+  "description": "Magento 2 Delivery Time Extension",
+  "type": "magento2-module",
+  "version": "1.1.0",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Magetop",
+      "email": "support@magetop.com",
+      "homepage": "https://www.magetop.com",
+      "role": "Technical Support"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Magetop\\DeliveryTime\\": ""
+    }
+  }
+}

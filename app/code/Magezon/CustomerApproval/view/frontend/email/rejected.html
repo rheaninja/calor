@@ -1,0 +1,13 @@
+<!--@subject {{trans "%store_name: Your account has been disapproved" store_name=$store.getFrontendName()}} @-->
+<!--@vars {
+"var store.getFrontendName()":"Customer Approval: Store Name",
+"var name":"CustomerApproval: Customer Name",
+"var email":"CustomerApproval: Customer Email"
+} @-->
+{{template config_path="design/email/header_template"}}
+
+<p class="greeting">{{trans "Hello %name," name=$name}}</p>
+<p>{{trans "Thank you for registering your account at our website. Unfortunately, we <strong>cannot accept</strong> your account." |raw}}</p>
+<p>{{trans "Please contact us for more information."}}</p>
+<p>{{trans "Thank you"}}</p>
+

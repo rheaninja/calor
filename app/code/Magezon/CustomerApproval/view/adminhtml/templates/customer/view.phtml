@@ -1,0 +1,8 @@
+<?php
+$helper = $this->helper(Magezon\CustomerApproval\Helper\Data::class);
+if ($helper->isEnabled() && $block->getApprovedLabel()) { ?>
+    <tr>
+        <th><?= $block->escapeHtml(__('Status:')) ?></th>
+        <td><?= $block->escapeHtml($block->getApprovedLabel()) ?></td>
+    </tr>
+<?php } ?>

@@ -1,0 +1,38 @@
+.newsletter{
+    position: relative;
+    .control{
+        &:before{
+            top: 5px;
+            color: @primary-text;
+        }
+    }
+    input{
+           background: @color-white !important;
+            border-top-left-radius: 8px !important;
+            border-bottom-left-radius: 8px !important;
+            height: 45px;
+            border: 0 !important;
+            border-top-right-radius: 0 !important;
+            border-bottom-right-radius: 0 !important;
+    }
+    .action{
+        &.subscribe{
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            height: 45px;
+            border-top-left-radius: 0 !important;
+            border-bottom-left-radius: 0 !important;
+        }
+    }
+}
+.copyright {
+    background-color: @color-white;
+    color: #000;
+}
+.footer.content {
+    .links{
+        >li {
+            border: none;
+        }
+    }
+}

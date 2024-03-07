@@ -1,0 +1,4 @@
+email,_address_telephone,firstname,lastname,_address_firstname,_address_lastname,_address_company,_address_street,_address_city,_address_region,_address_postcode,_address_country_id,_address_default_billing_,_website,_store,created_in,group_id,store_id,website_id
+rhea@ninjatechnolabs.com,898989898,Rhea,Smith,Rhea,Smith,Ninja,"Main Street 1
+Suite 200",Campbell,California,95008,GB,1,base,admin,Admin,1,0,1
+,,,,,,,,,,,,,,,,,,

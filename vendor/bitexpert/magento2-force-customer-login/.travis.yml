@@ -1,0 +1,71 @@
+language: php
+
+cache:
+  directories:
+    - $HOME/.composer/cache
+
+matrix:
+  include:
+    - php: 7.2
+      env:
+        - MAGE_230=true
+        - MAGE_231=false
+        - MAGE_232=false
+        - MAGE_233=false
+    - php: 7.2
+      env:
+        - MAGE_230=false
+        - MAGE_231=true
+        - MAGE_232=false
+        - MAGE_233=false
+    - php: 7.2
+      env:
+        - MAGE_230=false
+        - MAGE_231=false
+        - MAGE_232=true
+        - MAGE_233=false
+    - php: 7.2
+      env:
+        - MAGE_230=false
+        - MAGE_231=false
+        - MAGE_232=false
+        - MAGE_233=true
+    - php: 7.3
+      env:
+        - MAGE_230=false
+        - MAGE_231=false
+        - MAGE_232=false
+        - MAGE_233=true
+    - php: 7.3
+      env:
+        - MAGE_230=false
+        - MAGE_231=false
+        - MAGE_232=false
+        - MAGE_233=true
+        - TEST_COVERAGE=true
+
+before_install:
+  - if [[ $encrypted_98dcc32c9b33_key != '' ]]; then openssl aes-256-cbc -K $encrypted_98dcc32c9b33_key -iv $encrypted_98dcc32c9b33_iv -in auth.json.enc -out auth.json -d ; fi
+
+install:
+  - if [[ $encrypted_98dcc32c9b33_key != '' && $TEST_COVERAGE == 'true' ]]; then travis_retry composer require --dev php-coveralls/php-coveralls ; fi
+
+before_script:
+  - composer self-update
+  - composer validate
+
+script:
+  - if [[ $encrypted_98dcc32c9b33_key != '' ]]; then composer install --prefer-source ; fi
+  - if [[ $encrypted_98dcc32c9b33_key != '' && MAGE_230 == true ]]; then composer require magento/framework:102.0.0 magento/module-backend:101.0.0 magento/module-customer:102.0 magento/module-store:101.0.0 magento/module-ui:101.1.0 ; fi
+  - if [[ $encrypted_98dcc32c9b33_key != '' && MAGE_231 == true ]]; then composer require magento/framework:102.0.1 magento/module-backend:101.0.1 magento/module-customer:102.0.1 magento/module-store:101.0.1 magento/module-ui:101.1.1 ; fi
+  - if [[ $encrypted_98dcc32c9b33_key != '' && MAGE_232 == true ]]; then composer require magento/framework:102.0.2 magento/module-backend:101.0.1 magento/module-customer:102.0.2 magento/module-store:101.0.2 magento/module-ui:101.1.2 ; fi
+  - if [[ $encrypted_98dcc32c9b33_key != '' && MAGE_233 == true ]]; then composer require magento/zendframework1:1.14.2 zendframework/zend-stdlib:3.2.1 magento/framework:102.0.3 magento/module-backend:101.0.3 magento/module-customer:102.0.3 magento/module-store:101.0.3 magento/module-ui:101.1.3 ; fi
+  - if [[ $encrypted_98dcc32c9b33_key != '' ]]; then ./vendor/bin/phing lint ; fi
+  - if [[ $encrypted_98dcc32c9b33_key != '' ]]; then ./vendor/bin/phing sniff ; fi
+  - if [[ $encrypted_98dcc32c9b33_key != '' ]]; then ./vendor/bin/phing analyze ; fi
+  - if [[ $encrypted_98dcc32c9b33_key != '' ]]; then ./vendor/bin/phing security:check ; fi
+  - if [[ $encrypted_98dcc32c9b33_key != '' && $TEST_COVERAGE != 'true' ]]; then ./vendor/bin/phing unit ; fi
+  - if [[ $encrypted_98dcc32c9b33_key != '' && $TEST_COVERAGE == 'true' ]]; then ./vendor/bin/phing unit-with-coverage ; fi
+
+after_script:
+  - if [[ $encrypted_98dcc32c9b33_key != '' && $TEST_COVERAGE == 'true' ]]; then ./vendor/bin/php-coveralls -v ; fi

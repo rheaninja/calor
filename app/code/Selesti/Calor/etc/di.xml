@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <type name="Magento\LoginAsCustomerAssistance\Model\ResourceModel\GetLoginAsCustomerAssistanceAllowed">
+        <plugin name="force-login-as-customer" type="Selesti\Calor\Plugin\GetLoginAsCustomerAssistanceAllowedPlugin" sortOrder="15"/>
+    </type>
+
+    <type name="Magento\Theme\Model\View\Design">
+        <arguments>
+            <argument name="themes" xsi:type="array">
+                <item name="adminhtml" xsi:type="string">Selesti/Calor</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <type name="Magento\Customer\Controller\Account\CreatePost">
+        <plugin name="Selesti_Customer_Account_CreatePost" type="Selesti\Calor\Plugin\Customer\Account\CreatePost" sortOrder="1"/>
+    </type>
+
+    <type name="Magento\Customer\Controller\Account\Confirm">
+        <plugin name="Selesti_Customer_Account_Confirm" type="Selesti\Calor\Plugin\Customer\Account\Confirm" sortOrder="1"/>
+    </type>
+
+    <type name="Magento\Customer\Controller\Account\LoginPost">
+        <plugin name="Selesti_Customer_Account_LoginPost" type="Selesti\Calor\Plugin\Customer\Account\LoginPost" sortOrder="1"/>
+    </type>
+
+</config>

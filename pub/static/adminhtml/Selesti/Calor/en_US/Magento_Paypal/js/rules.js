@@ -1,0 +1,1 @@
+/var/www/html/calor/vendor/magento/module-paypal/view/adminhtml/web/js/rules.js

@@ -1,0 +1,149 @@
+
+.nav-sections {
+    background: @color-white;
+    border-top: 1px solid @color-gray-400;
+}
+.block-search{
+    .block-content{
+        input{
+            background: @color-white;
+            background-clip: padding-box;
+            border: 1px solid @color-gray-400;
+            height: 40px;
+            border-radius: 24px;
+            padding: 6px 38px 6px 20px;
+            font-size: 14px;
+            &:focus{
+                box-shadow: 0 0 3px 1px #dcdef2;
+            }
+        }
+        .actions{
+            .action{
+                &.search{
+                    top: 4px;
+                    right: 16px;
+                }
+            }
+        }
+    }
+}
+.page-header {
+    .header {
+        .minicart-wrapper{
+            margin-top: 4px;    
+            .block-minicart{
+                display: block;
+                border-radius: 8px;
+                box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.203453);
+                border: 0;
+                .checkout{
+                    border-radius: 24px;
+                }
+                .product-item-name {
+                    a{
+                        color: @primary-text;
+                    }
+                }
+            }
+            .minicart-items{
+                .delete, .edit{
+                    &:before{
+                        color: @primary-text;
+                    }
+                }
+                .item-qty {
+                    text-align: center;
+                    width: 60px;
+                    border-radius: 24px;
+                    border: 1px solid @color-gray-300;
+                    background-color: @primary-gray;
+                }
+            }
+            .minicart-items-wrapper{
+                border: 1px solid @primary-gray;
+            }
+            .minicart-items .product-item:not(:first-child) {
+                border-top: 1px solid @primary-gray;
+            }
+            .action{
+                &.showcart{
+                    &:before{
+                        color: #7f7f92;
+                    }
+                    &:hover{
+                        color: @brand-danger;
+                    }
+                    .counter{
+                        &.qty{
+                            border-radius: 24px;
+                            position: absolute;
+                            top: -8px;
+                            left: 12px;
+                            background: @brand-danger;
+                            height: 18px;
+                            line-height: 18px;
+                            padding: 0 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .compare{
+        &.wrapper{
+            .compare{
+                margin-bottom: 0 !important;
+                margin-top: 5px !important;
+            }
+        }
+    }
+}
+
+.customer-welcome{
+    ul{
+        border: 0 !important;
+        border-radius: 8px;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.203453) !important;
+        padding: 8px 0 !important;
+        li{
+            a{
+                padding: 8px 15px;
+            }
+        }
+    }
+}
+@media (min-width: 768px){
+    .page-header {
+        border: 0;
+        margin-bottom: 0;
+        background-color: @color-white;
+       .panel.wrapper {
+            border-bottom: 1px solid @color-black !important;
+            background-color: @color-black !important;
+        }
+    }
+    .navigation{
+        background: @color-white !important;
+    }
+}
+@media only screen and (max-width: 767px){
+    .minicart-wrapper {
+        margin-top: 10px !important;
+        .action{
+            &.showcart{
+                .counter{
+                    &.qty{
+                        border-radius: 24px;
+                        position: absolute;
+                        top: -8px;
+                        left: 12px;
+                        background: @brand-danger;
+                        height: 18px;
+                        line-height: 18px;
+                        padding: 0 0px;
+                    }
+                }
+            }
+        }
+    }
+}

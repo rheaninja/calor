@@ -1,0 +1,1 @@
+/var/www/html/calor/vendor/amzn/amazon-pay-module/view/frontend/web/js/model/storage.js

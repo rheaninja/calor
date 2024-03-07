@@ -1,0 +1,1 @@
+/var/www/html/calor/lib/web/magnifier/magnify.js

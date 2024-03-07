@@ -1,0 +1,347 @@
+.config-nav-block .mp-logo {
+  background: url(../images/magepal-logo.png) no-repeat;
+  vertical-align: middle;
+  background-size: cover;
+  display: inline-block;
+  height: 30px;
+  line-height: 25px;
+  margin-top: -1.2em;
+  min-width: 30px;
+  position: absolute;
+  top: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.config-nav-block.admin__page-magepal-tab strong {
+  display: flex;
+  align-items: center;
+}
+.config-nav-block.admin__page-magepal-tab strong:before {
+  /*background: url(../images/magepal-logo.png) no-repeat;*/
+  width: 20px;
+  height: 16px;
+  background-size: cover;
+  content: '';
+  display: inline-block;
+  margin-right: 18px;
+  vertical-align: middle;
+}
+@media (min-width: 1245px) {
+  .config-nav-block.admin__page-magepal-tab._hide li.item .notifications-counter {
+    display: none;
+  }
+  .config-nav-block.admin__page-magepal-tab._show strong .notifications-counter {
+    display: none;
+  }
+}
+@media (max-width: 1245px) {
+  .config-nav-block.admin__page-magepal-tab li.item .notifications-counter {
+    display: none;
+  }
+}
+.config-nav-block.admin__page-magepal-tab .notifications-counter {
+  background-color: #eb5202;
+  border-radius: 1em;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  height: 25px;
+  left: 100%;
+  line-height: 25px;
+  margin-left: -5.7em;
+  margin-top: -1.1em;
+  min-width: 25px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+#magepal-extension-list {
+  /* Screen larger than 600px? 2 column */
+  /* Screen larger than 900px? 3 columns */
+  /* Screen larger than 900px? 3 columns */
+  /* Screen larger than 900px? 3 columns */
+  /* Screen larger than 900px? 3 columns */
+}
+#magepal-extension-list .entry-edit-head {
+  font-size: 2.0rem;
+  padding: 1.8rem 1.5rem;
+  text-transform: uppercase;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #e3e3e3;
+  border-top: 1px solid #e3e3e3;
+  margin-bottom: 13px;
+}
+#magepal-extension-list .headerline {
+  color: black;
+  font-weight: 600;
+  text-align: center;
+  height: 45px;
+  box-shadow: 0 11px 17px -17px #000000;
+}
+#magepal-extension-list .text-version {
+  margin-top: 12px;
+  text-align: center;
+  color: green;
+}
+#magepal-extension-list .latest-version {
+  margin-top: 12px;
+  text-align: center;
+  color: red;
+}
+#magepal-extension-list .update {
+  color: red;
+}
+#magepal-extension-list .card {
+  background-color: #f8f8f8;
+  border: #41362f;
+  color: white;
+  padding: 1rem;
+  height: 10rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#magepal-extension-list .cards {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-gap: 1rem;
+}
+@media (min-width: 400px) {
+  #magepal-extension-list .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 700px) {
+  #magepal-extension-list .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  #magepal-extension-list .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1300px) {
+  #magepal-extension-list .cards {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media (min-width: 1600px) {
+  #magepal-extension-list .cards {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+#magepal-extension-list .info {
+  text-align: center;
+  color: black;
+  padding-top: 3px;
+}
+#magepal-extension-list .info a {
+  color: black;
+}
+.magepal-extension-search {
+  background-color: #514943;
+  margin-bottom: 20px;
+}
+.magepal-extension-search .tb {
+  display: table;
+  width: 100%;
+}
+.magepal-extension-search .td {
+  display: table-cell;
+  vertical-align: middle;
+}
+.magepal-extension-search input,
+.magepal-extension-search button {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+}
+.magepal-extension-search #cover {
+  padding: 35px;
+  background-color: #1C96BC;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px #a9afb0, 0 0 0 20px #ffffffeb;
+  transform: scale(0.6);
+}
+.magepal-extension-search input[type="text"] {
+  width: 100%;
+  height: 65px;
+  font-size: 20px;
+  line-height: 1;
+}
+@media (min-width: 1130px) {
+  .magepal-extension-search input[type="text"] {
+    font-size: 25px;
+  }
+}
+@media (min-width: 1325px) {
+  .magepal-extension-search input[type="text"] {
+    font-size: 32px;
+  }
+}
+.magepal-extension-search input[type="text"]::placeholder {
+  color: black;
+}
+.magepal-extension-search input[type="text"]::-webkit-input-placeholder {
+  color: black;
+}
+.magepal-extension-search input[type="text"]:-moz-placeholder {
+  /* Firefox 18- */
+  color: black;
+}
+.magepal-extension-search input[type="text"]::-moz-placeholder {
+  /* Firefox 19+ */
+  color: black;
+}
+.magepal-extension-search input[type="text"]:-ms-input-placeholder {
+  color: black;
+}
+.magepal-extension-search #s-cover {
+  width: 1px;
+  padding-left: 35px;
+}
+.magepal-extension-search button {
+  position: relative;
+  display: block;
+  width: 84px;
+  height: 96px;
+  cursor: pointer;
+}
+.magepal-extension-search #s-circle {
+  position: relative;
+  top: -8px;
+  left: 0;
+  width: 43px;
+  height: 43px;
+  margin-top: 0;
+  border: 15px solid #fff;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: 0.5s ease all;
+}
+.magepal-extension-search button span {
+  position: absolute;
+  top: 68px;
+  left: 43px;
+  display: block;
+  width: 45px;
+  height: 15px;
+  background-color: transparent;
+  border-radius: 10px;
+  transform: rotateZ(52deg);
+  transition: 0.5s ease all;
+}
+.magepal-extension-search button span:before,
+.magepal-extension-search button span:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 45px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  transform: rotateZ(0);
+  transition: 0.5s ease all;
+}
+.magepal-extension-search #s-cover:hover #s-circle {
+  top: -1px;
+  width: 67px;
+  height: 15px;
+  border-width: 0;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.magepal-extension-search #s-cover:hover span {
+  top: 50%;
+  left: 56px;
+  width: 25px;
+  margin-top: -9px;
+  transform: rotateZ(0);
+}
+.magepal-extension-search #s-cover:hover button span:before {
+  bottom: 11px;
+  transform: rotateZ(52deg);
+}
+.magepal-extension-search #s-cover:hover button span:after {
+  bottom: -11px;
+  transform: rotateZ(-52deg);
+}
+.magepal-extension-search #s-cover:hover button span:before,
+.magepal-extension-search #s-cover:hover button span:after {
+  right: -6px;
+  width: 40px;
+  background-color: #fff;
+}
+.magepal-extension-search #ytd-url {
+  display: block;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 10px 14px;
+  margin: 20px;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: #ff7575;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px -5px rgba(255, 117, 117, 0.86);
+  z-index: 125;
+}
+.section-config.active #magepal-info,
+.section-config.active #magepal-info-dl,
+.section-config.active #magepal-info-ee,
+.section-config.active .magepal-info {
+  padding-bottom: 5px;
+}
+.section-config.active #magepal-info a,
+.section-config.active #magepal-info-dl a,
+.section-config.active #magepal-info-ee a,
+.section-config.active .magepal-info a {
+  font-weight: bold;
+  border-left: 2px solid #e3e3e3;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #ef7e1e;
+}
+.section-config.active #magepal-info a:first-child,
+.section-config.active #magepal-info-dl a:first-child,
+.section-config.active #magepal-info-ee a:first-child,
+.section-config.active .magepal-info a:first-child {
+  padding-left: 5px;
+  border-left: none;
+}
+.section-config.active #upgrade-to-enhanced-ecommerce,
+.section-config.active #upgrade-to-datalayer,
+.section-config.active #upgrade-to-google-analytics4,
+.section-config.active .magepal-extension-promo {
+  padding: 7px 10px;
+  border: 1px solid #e3e3e3;
+  background: #f8f8f8;
+  margin-bottom: 5px;
+}
+.section-config.active #system_gmailsmtpapp-head,
+.section-config.active #googletagmanager_about-head,
+.section-config.active #googletagmanager_enhanced_ecommerce-head,
+.section-config.active #googletagmanager_datalayer-head,
+.section-config.active #enhanced_transactional_emails_general-head,
+.section-config.active #magepal_checkout_preview_success_page-head {
+  padding-bottom: 0;
+}
+.section-config.active a[id$="about_magepal-head"] {
+  padding-bottom: 0;
+}
+.section-config.active #row_googletagmanager_gdpr_note label span {
+  display: none;
+}
+.section-config.active .magepal-hr {
+  border-top: 1px solid #e3e3e3;
+}

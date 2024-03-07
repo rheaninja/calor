@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magezon
+ *
+ * This source file is subject to the Magezon Software License, which is available at http://magezon.com/license/.
+ * Do not edit or add to this file if you wish to upgrade the to newer versions in the future.
+ * If you wish to customize this module for your needs.
+ * Please refer to http://www.magezon.com for more information.
+ *
+ * @category  Magezon
+ * @package   Magezon_CustomerApproval
+ * @copyright Copyright (C) 2021 Magezon (http://magezon.com)
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <customerapproval>
+            <general>
+                <enabled>1</enabled>
+                <auto_approval>0</auto_approval>
+                <pending_message>Please give us time to verify your account. Thanks for visiting us.</pending_message>
+                <disapproval_message>Something went wrong with your account! Please contact us for more information.</disapproval_message>
+            </general>
+            <admin_email_settings>
+                <enabled>1</enabled>
+                <email_sender>magezon@gmail.com</email_sender>
+                <email_template>customerapproval_admin_email_settings_email_template</email_template>
+                <recipients>magezon@gmail.com</recipients>
+            </admin_email_settings>
+            <customer_email_settings>
+                <enabled>1</enabled>
+                <email_sender>magezon@gmail.com</email_sender>
+                <pending_email_template>customerapproval_customer_email_settings_pending_email_template</pending_email_template>
+                <approval_email_template>customerapproval_customer_email_settings_approval_email_template</approval_email_template>
+                <rejected_email_template>customerapproval_customer_email_settings_rejected_email_template</rejected_email_template>
+            </customer_email_settings>
+        </customerapproval>
+    </default>
+</config>

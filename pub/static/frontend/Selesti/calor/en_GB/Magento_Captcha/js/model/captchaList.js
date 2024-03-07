@@ -1,0 +1,1 @@
+/var/www/html/calor/vendor/magento/module-captcha/view/frontend/web/js/model/captchaList.js

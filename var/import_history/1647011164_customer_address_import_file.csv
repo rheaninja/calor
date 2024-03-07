@@ -1,0 +1,3 @@
+email,firstname,gender,lastname,_address_city,_address_company,_address_country_id,_address_firstname,_address_lastname,_address_postcode,_address_region,_address_street,_address_suffix,_address_telephone,_website,group_id
+customer2@example.co.uk,Louise,Male,Smith,Grangemouth,Calor Gas Ltd.,GB,Jon,Doe,FK4 8YL,Stirlingshire,"89 Long House,Long Street",,01324 657898,base,1
+customer1@example.co.uk,Rachel,,Jones,Ivybridge,Calor Gas Ltd,GB,David,Wright,PL11 8ER,Devon,"244 Grove Road,Central Avenue,Lee Mill Industrial Estate",,01752 775987,base,1

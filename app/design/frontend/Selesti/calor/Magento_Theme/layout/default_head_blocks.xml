@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="css/calor.css" />
+        <link rel="stylesheet" src="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&amp;display=swap" src_type="url"  />
+        <link src="Magento_Theme::fav/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16"/>
+        <link src="Magento_Theme::fav/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32"/>
+        <link src="Magento_Theme::fav/android-chrome-192x192.png" rel="icon" type="image/png" sizes="192x192"/>
+        <link src="Magento_Theme::fav/android-chrome-512x512.png" rel="icon" type="image/png" sizes="512x512"/>
+        <link rel="manifest" src="Magento_Theme::fav/site.webmanifest"/>
+        <link rel="apple-touch-icon" sizes="180x180" src="Magento_Theme::fav/apple-touch-icon.png"/>
+        <link rel="mask-icon" src="Magento_Theme::fav/safari-pinned-tab.svg"/>
+        <link src_type="url" type="text/css" src="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet" />
+        <meta name="msapplication-TileColor" content="#ffffff"/>
+        <meta name="msapplication-TileImage" content="Magento_Theme::mstile-150x150.png"/>
+    </head>
+    <body>
+        <referenceContainer name="after.body.start">
+            <referenceBlock name="cookie-status-check" remove="true"/>
+        </referenceContainer>
+    </body>
+</page>

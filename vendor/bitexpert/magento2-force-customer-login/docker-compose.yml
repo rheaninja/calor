@@ -1,0 +1,77 @@
+# Based on Mark Shust's Docker Configuration for Magento Version 22.0.0
+# https://github.com/markshust/docker-magento
+
+version: "3"
+
+services:
+  app:
+    image: markoshust/magento-nginx:1.18
+    ports:
+      - "80:8000"
+      - "443:8443"
+    links:
+      - db
+      - phpfpm
+      - elasticsearch
+    volumes: &appvolumes
+      - ~/.composer:/var/www/.composer
+      - ~/.composer/auth.json:/var/www/html/auth.json
+      - ./Api:/var/www/html/bitExpert/ForceCustomerLogin/Api
+      - ./Block:/var/www/html/bitExpert/ForceCustomerLogin/Block
+      - ./Controller:/var/www/html/bitExpert/ForceCustomerLogin/Controller
+      - ./etc:/var/www/html/bitExpert/ForceCustomerLogin/etc
+      - ./Helper:/var/www/html/bitExpert/ForceCustomerLogin/Helper
+      - ./Model:/var/www/html/bitExpert/ForceCustomerLogin/Model
+      - ./Plugin:/var/www/html/bitExpert/ForceCustomerLogin/Plugin
+      - ./Repository:/var/www/html/bitExpert/ForceCustomerLogin/Repository
+      - ./Setup:/var/www/html/bitExpert/ForceCustomerLogin/Setup
+      - ./Ui:/var/www/html/bitExpert/ForceCustomerLogin/Ui
+      - ./Validator:/var/www/html/bitExpert/ForceCustomerLogin/Validator
+      - ./view:/var/www/html/bitExpert/ForceCustomerLogin/view
+      - ./registration.php:/var/www/html/bitExpert/ForceCustomerLogin/registration.php
+      - ./Api:/var/www/html/BitExpert/ForceCustomerLogin/Api
+      - ./Block:/var/www/html/BitExpert/ForceCustomerLogin/Block
+      - ./Controller:/var/www/html/BitExpert/ForceCustomerLogin/Controller
+      - ./etc:/var/www/html/BitExpert/ForceCustomerLogin/etc
+      - ./Helper:/var/www/html/BitExpert/ForceCustomerLogin/Helper
+      - ./Model:/var/www/html/BitExpert/ForceCustomerLogin/Model
+      - ./Plugin:/var/www/html/BitExpert/ForceCustomerLogin/Plugin
+      - ./Repository:/var/www/html/BitExpert/ForceCustomerLogin/Repository
+      - ./Setup:/var/www/html/BitExpert/ForceCustomerLogin/Setup
+      - ./Ui:/var/www/html/BitExpert/ForceCustomerLogin/Ui
+      - ./Validator:/var/www/html/BitExpert/ForceCustomerLogin/Validator
+      - ./view:/var/www/html/BitExpert/ForceCustomerLogin/view
+      - ./composer.json:/var/www/html/BitExpert/ForceCustomerLogin/composer.json
+      - ./composer.lock:/var/www/html/BitExpert/ForceCustomerLogin/composer.lock
+      - ./registration.php:/var/www/html/BitExpert/ForceCustomerLogin/registration.php
+      - ./validate_m2_package.php:/var/www/html/BitExpert/ForceCustomerLogin/validate_m2_package.php
+      - ./dist:/dist
+      - appdata:/var/www/html
+      - sockdata:/sock
+
+  phpfpm:
+    image: markoshust/magento-php:7.4-fpm
+    links:
+      - db
+    volumes: *appvolumes
+
+  elasticsearch:
+    image: markoshust/magento-elasticsearch:7.6.2-2
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      - "discovery.type=single-node"
+
+  db:
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    env_file: env/db.env
+    volumes:
+      - dbdata:/var/lib/mysql
+
+volumes:
+  appdata:
+  dbdata:
+  sockdata:
